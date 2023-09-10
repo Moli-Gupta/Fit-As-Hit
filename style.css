@@ -1,0 +1,234 @@
+body{
+    margin:0;
+    padding:0;
+    font-size: 17px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(231, 231, 231, 0.819);
+}
+span{
+    color:red;
+    font-weight: bold;
+}
+header{
+    background: black;
+    color:whitesmoke;
+    font-size:22px;
+    min-height: 50px;
+    padding:20px 20px ;
+    border-bottom: 5px solid red;
+}
+header a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+}
+header li{
+    display:inline;
+    list-style-type: none;
+    padding:10px;
+}
+header h1{
+    padding-left: 70px;
+}
+h1{
+    margin:0;
+}
+#main{
+    float:left;
+}
+header nav{
+    float: right;
+}
+
+header a:hover{
+    color:aquamarine;
+    font-weight: bold;
+}
+header .current {
+    color:rgb(255, 161, 161);
+}
+.showcase{
+    background-image:url('https://img.freepik.com/premium-photo/3d-rendering-black-dumbbells-floor-dark-concept-fitness-room-with-training-equipments-back_67155-14961.jpg?w=1380') ;
+    background-position: 20%;
+    min-height:400px;
+    margin-top:0;
+    color:whitesmoke;
+    text-align:center;
+}
+.showcase h1{
+    margin-top:0;
+    padding-top:80px;
+    font-size:30px;
+    color:bisque
+}
+.showcase1{
+    background-color: black;
+    color:whitesmoke;
+    min-height:40px ;
+    padding: 15px 20px 0px 80px;
+    border-top:5px solid red;
+}
+.showcase1 h1{
+    float:left;
+}
+.showcase1 form{
+    float:right;
+}
+.showcase1 form input{
+    border-radius: 5px;
+    height:20px;
+}
+.button1{
+    border-radius: 5px;
+    height:25px;
+    background-color: red;
+    color:whitesmoke
+}
+.button1:hover{
+    font-weight: bold;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#boxes{
+    margin-top:20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.box img{
+    height:110px;
+    width:90px;
+}
+#boxes .box{
+    float:left;
+    width:30%;
+    padding:20px;
+    text-align: center; 
+} 
+footer div{
+    text-align: center;
+    padding:20px;
+    background-color: rgb(250, 38, 38);
+    padding-bottom:5px;
+    padding-top: 5px;
+    margin-top:200px;
+}
+
+/*about us page*/
+
+article{
+    margin-top:20px;
+    width:65%;
+    float:left;
+    margin-left:5px;
+}
+aside .sidebar{
+    border:2px dashed lightsteelblue;
+    width:30%;
+    float:right;
+    margin-top:50px;
+    margin-right:35px;
+    margin-bottom:30px;
+    padding:0.5%;
+    color:white;
+    background-color: rgb(31, 65, 65);
+}
+
+/*plans page*/
+
+.main-head{
+    text-align: center;
+    margin-top:40px;
+}
+.plans{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:40px;
+}
+.plan1{
+    border:1px dashed black;
+    flex-basis:25%;
+    padding:2%;
+}
+.plan2{
+    border:1px dashed black;
+    flex-basis:25%;
+    padding:2%;
+}
+.plan3{
+    border:1px dashed black;
+    flex-basis:25%;
+    padding:2%;
+}
+
+/*service page*/
+.jars{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.jar1{
+    margin-top:40px;
+    margin-left: 35px;
+}
+.jar1 li h2{
+    color:rgb(97, 116, 136);;
+}
+.jar2{
+    flex-basis:35%;
+    border:2px dashed lightsteelblue;
+    margin-top:50px;
+    margin-right:35px;
+    margin-bottom:30px;
+    margin-left:10px;
+    padding:1%;
+    color:white;
+    background-color: rgb(31, 65, 65);
+}
+#reviews{
+    margin-top:40px;
+    margin-left:35px;
+    margin-right:35px;
+}
+.review-div{
+    margin:2%;
+    border-bottom: 2px dashed lightslategray;
+}
+.name{
+    font-style: italic;
+}
+
+/*media queries*/
+
+@media (max-width:750px) {
+    #main,header nav,#boxes .box,.showcase1 h1,.showcase1 form,.article,aside .sidebar{
+        float:none;
+        text-align: center;
+        width:100%;
+    }
+    header li{
+        padding:5px;
+    }
+    .plans,.jars{
+        flex-direction: column;
+        align-items: center;
+    }
+    .jar2{
+        width: 80%;
+        margin-left: 35px;
+    }
+}
+@media (max-width:1300px) {
+    #boxes .box,article,aside .sidebar{
+        float:none;
+        text-align: center;
+        width:80%;
+        margin-left: 50px;
+    }
+}
+@media (min-width:1300px)
+{
+    #foot{
+        margin-top:450px;
+    }
+}
